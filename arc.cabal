@@ -1,0 +1,28 @@
+cabal-version:      3.0
+name:               arc
+version:            0.1.0.0
+-- synopsis:
+-- description:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Victoriast8
+maintainer:         victoralexsch@gmail.com
+-- copyright:
+category:           Language
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable arc
+    import:           warnings
+    main-is:          ArcInt.hs
+    other-modules:
+      Parser
+      AST
+    -- other-extensions:
+    build-depends:    base ^>=4.18.2.1
+    hs-source-dirs:   src
+    default-language: Haskell2010
