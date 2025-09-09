@@ -6,4 +6,7 @@ As described in the report, Arc is the attempt of intersecting the programming l
 
 ## Limitations
 
-This interpreter is a proof of concept. Keep in mind that some of the advantages of reversible programming languages are lost (such as mitigation of heat dispersion) due to this interpreter being written in Haskell, which is *not* reversible a reversible language.
+This interpreter is a proof of concept. Keep in mind that:
+
+1. Some of the advantages of reversible programming languages are lost (such as mitigation of heat dispersion) due to this interpreter being written in Haskell, which is *not* reversible a reversible language.
+2. The interpreter exploits none of the parallelisable properties of the inbuilt array combinators.
